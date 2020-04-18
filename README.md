@@ -35,3 +35,7 @@
 - copy paste it to github SSH
 - ssh -T git@github.com
 ```
+
+18. Deploying to Heroku
+19. New Features Deployment
+20. Avoiding Global Modules - Nodemon
