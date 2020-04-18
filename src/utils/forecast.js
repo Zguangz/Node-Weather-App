@@ -21,11 +21,17 @@ const forecast = (latitude, longitude, callback) => {
         body.current.weather_descriptions[0] +
           ". It is currently " +
           body.current.temperature +
-          " degree at " +
+          "°C at " +
           body.location.name +
           " but feels like " +
           body.current.feelslike +
-          " degree."
+          "°C. The wind speed is " +
+          body.current.wind_speed +
+          "km/h at " +
+          body.current.wind_degree +
+          " degrees. The humidity is " +
+          body.current.humidity +
+          "%."
       );
     }
   });
