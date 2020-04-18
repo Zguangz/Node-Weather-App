@@ -29,7 +29,8 @@
     ````
 
 17. Adding SSH to Github
-
+    ````
     - cat ~/.ssh/id_rsa.pub
     - copy paste it to github SSH
     - ssh -T git@github.com
+    ````
