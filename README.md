@@ -1,4 +1,4 @@
-# Web-Server
+# Node-Weather-App
 
 1. Hello Express!
 2. Serving up HTML and JSON
@@ -19,16 +19,21 @@
 
 16. Setting up SSH Keys
 
-    - ssh-keygen -t rsa -b 4096 -C "<Your_Email>"
-    - ls -al ~/.ssh
-    - window: eval \$(ssh-agent -s)
-    - mac: eval "\$(ssh-agent -s)"
+```
+- ssh-keygen -t rsa -b 4096 -C "<Your_Email>"
+- ls -al ~/.ssh
 
-    - window: ssh-add ~/.ssh/id_rsa
-    - mac: ssh-add -K ~/.ssh/id_rsa
+- window: eval \$(ssh-agent -s)
+- mac: eval "\$(ssh-agent -s)"
+
+- window: ssh-add ~/.ssh/id_rsa
+ - mac: ssh-add -K ~/.ssh/id_rsa
+```
 
 17. Adding SSH to Github
 
-    - cat ~/.ssh/id_rsa.pub
-    - copy paste it to github SSH
-    - ssh -T git@github.com
+```
+- cat ~/.ssh/id_rsa.pub
+ - copy paste it to github SSH
+- ssh -T git@github.com
+```
