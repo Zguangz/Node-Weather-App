@@ -20,17 +20,31 @@ hbs.registerPartials(partialsPath);
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath));
 
+// Setup to use bootstrap
+app.use(
+  "/jquery/js",
+  express.static(path.join(__dirname + "../../node_modules/jquery/dist"))
+);
+app.use(
+  "/bootstrap/css",
+  express.static(path.join(__dirname + "../../node_modules/bootstrap/dist/css"))
+);
+app.use(
+  "/bootstrap/js",
+  express.static(path.join(__dirname + "../../node_modules/bootstrap/dist/js"))
+);
+
 app.get("/", (req, res) => {
-  res.render("index", { title: "Weather App", name: "Zguang" });
+  res.render("index", { title: "WakeyCast", name: "Zguang" });
 });
 
 app.get("/about", (req, res) => {
-  res.render("about", { title: "About", name: "Zguang" });
+  res.render("about", { title: "WakeyCast", name: "Zguang" });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    title: "Help",
+    title: "WakeyCast",
     name: "Zguang",
     helpText: "This is a helpful text",
   });
