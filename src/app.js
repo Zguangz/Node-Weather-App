@@ -46,7 +46,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     title: "WakeyCast",
     name: "Zguang",
-    helpText: "This is a helpful text",
+    helpText: "This is a helpful text.",
   });
 });
 
